@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!--sign in page head icon-->
+    <ImageView android:layout_width="70dp" android:layout_height="70dp"
+               android:id="@+id/imageView_head"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="84dp"
+               android:background="@drawable/head"
+               android:layout_alignParentTop="true"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_alignParentStart="true" android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="221dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/textview_username_hint"
+                  android:text="username"
+                  android:padding="10dp"
+                  android:textSize="20dp"
+        />
+        <EditText android:layout_width="236dp" android:layout_height="wrap_content"
+                  android:id="@+id/textview_username"
+                  android:padding="10dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_alignParentStart="true" android:layout_alignParentTop="true"
+                  android:layout_marginTop="187dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/textview_password_hint"
+                  android:text="username"
+                  android:padding="10dp"
+                  android:textSize="20dp"
+        />
+        <EditText android:layout_width="236dp" android:layout_height="wrap_content"
+                  android:id="@+id/textview_password"
+                  android:padding="10dp"
+        />
+    </LinearLayout>
+
+    <Button android:layout_width="230dp" android:layout_height="wrap_content"
+            android:id="@+id/button_signin"
+            android:text="sign in "
+            android:textSize="20dp"
+
+            android:layout_alignParentStart="true" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="143dp" android:layout_marginStart="75dp"/>
+</RelativeLayout>
