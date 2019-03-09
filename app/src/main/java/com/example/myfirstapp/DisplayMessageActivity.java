@@ -19,6 +19,8 @@ public class DisplayMessageActivity extends AppCompatActivity implements View.On
     RadioGroup radioGroup_one;
     TextView textView_sexual;
     ProgressDialog progressDialog;
+    Button btn_toListView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +38,7 @@ public class DisplayMessageActivity extends AppCompatActivity implements View.On
         btn_test_onclicklistener = (Button) findViewById(R.id.btn_test_onclicklistener);
         button_openbrowser = (Button) findViewById(R.id.button_openbrowser);
         radioGroup_one = (RadioGroup) findViewById(R.id.radio_button_group_one);
+        btn_toListView = (Button) findViewById(R.id.btn_toListView);
         btn_test_onclicklistener.setOnClickListener(this);
         button_openbrowser.setOnClickListener(this);
         textView_sexual =(TextView) findViewById(R.id.textview_sexual);
@@ -48,6 +51,17 @@ public class DisplayMessageActivity extends AppCompatActivity implements View.On
                         } else {
                             textView_sexual.setText("your sexual is women");
                         }
+                    }
+                }
+        );
+
+        btn_toListView.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //open listview;
+                        Intent intent1 = new Intent(DisplayMessageActivity.this, MyListView.class);
+                        startActivity(intent1);
                     }
                 }
         );
